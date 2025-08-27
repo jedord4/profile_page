@@ -149,6 +149,10 @@ body {
     font-size: 12px;
 }
 
+.tab-list a.active {
+    background: linear-gradient(150deg,  #d73cf5,#000, #5a73f8);
+    color: white;
+}
 .tab-list a:hover {
     background: linear-gradient(150deg,  #d73cf5,#000, #5a73f8);
     color: white;
@@ -226,4 +230,82 @@ body {
 .icon:hover {
     transform: scale(1.28);
     opacity: .9;
+}
+
+.stat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.button-group {
+  display: flex;
+  gap: 5px;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: background-color 1.2s;
+}
+
+.button:hover {
+    background: linear-gradient(150deg,  #d73cf5,#fff, #5a73f8);
+    color: #000;
+    font-weight: bold;
+    border: #000 solid 1px;
+}
+
+.arrow-icon {
+  font-size: 1.2em;
+  color: #555;
+  transform: rotate(0deg); 
+  display: inline-block; 
+  font-weight: bold;
+}
+
+.dot-icon {
+  font-size: 0.7em;
+  color: #555;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px; 
+}
+
+.price-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px; 
+}
+
+.label {
+  font-size: 0.8em;
+  color: #777;
+  margin-bottom: 2px;
+}
+
+.value {
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+}
+
+.separator {
+  width: 1px;
+  height: 30px;
+  background-color: #ddd;
+  margin: 0 40px;
 }
